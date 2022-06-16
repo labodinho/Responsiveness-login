@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@200;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: url(./image/bg-intro-desktop.png);
+    background-color: #FF7978;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main body section */
+
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 110px 150px;
+}
+
+.learn{
+    margin: 0 auto;
+    margin-top: 210px;
+    flex: 1;
+}
+
+.learn-text{
+    font-size: 65px;
+    font-weight: 700;
+    color: #FFF2F5;
+    padding-bottom: 20px;
+    
+}
+
+.learn-body{
+    font-size: 23px;
+    font-weight: 400;
+    color: #FACAC7;
+}
+
+
+
+/* form section */
+
+.form-section{
+    margin: 50px 80px;
+    flex: 1;
+}
+
+
+.try-text{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #5D54A3;
+    color: #FFF2F5;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 5px 5px  #BF6B7F;
+
+}
+
+.then-text{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form{
+    background-color: #FFF2F5;
+    border-radius: 10px;
+    width: 100%;
+    height: 64vh;
+    padding: 40px 40px 70px 40px;
+    box-shadow: 0px 5px 5px  #BF6B7F;
+
+}
+
+input{
+    height: 16%;
+    width: 100%;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid #C9C8CE;
+}
+
+::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 30px;
+
+}
+
+
+/* Button Section */
+
+button{
+    width: 100%;
+    height: 12%;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: transparent;
+    color: #FFF2F5;
+    background-color: #37CC8A;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: #5adfa3;
+}
+
+.click-text{
+    font-size: 14px;
+    text-align: center;
+    color:#C9C8CE;
+    margin-top: 15px;
+}
+
+span a{
+    text-decoration: none;
+    color: red;
+}
+
+
+/* Media query Section */
+
+@media screen and (max-width:922px) {
+    .form-container{
+        margin: 20px auto;
+        margin: 10px;
+    }
+    .learn{
+        margin-top: 60px;
+
+    }
+    .form-section{
+        margin: 36px 80px;
+    
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+    body{
+        background-image: url(./image/bg-intro-mobile.png);
+        background-color: #FF7978;
+    }
+    .form-container{
+        margin: 30px 20px;
+    }
+
+    .form-section {
+        margin: 20px 15px;
+        flex-direction: column;
+    }
+    form{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:280px) {
+    body{
+        background-image: url(./image/bg-intro-mobile.png);
+        background-color: #FF7978;
+    }
+    .form-container{
+        margin: 30px 20px;
+    }
+
+    .form-section {
+        margin: 20px 15px;
+        flex-direction: column;
+    }
+    form{
+        height: 80vh;
+    }
+
+    .learn-text{
+        font-size: 33px;
+    }
+
+    ::placeholder{
+        font-size: 14px;
+        font-weight: 200;
+        padding: 10px;
+    }
+
+    button{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+
